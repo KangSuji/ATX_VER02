@@ -434,7 +434,7 @@
               </div>
               <div class="show-box-wrap">
                 <div class="atx-box advence">
-                  <p class="box-tit"><span class="bold atx-font">A</span>dvence</p>
+                  <p class="box-tit"><span class="bold atx-font" id="a">A</span><span class="dummy-area"></span><span class="atx-hide-text">dvence</span></p>
                   <p class="default-txt">선진</p>
                   <div class="hidden-txt">
                     ATX가 추구하는<br />
@@ -442,7 +442,7 @@
                   </div>
                 </div>
                 <div class="atx-box techenolgy">
-                  <p class="box-tit"><span class="bold atx-font">T</span><span class="dummy-area"></span>echenolgy</p>
+                  <p class="box-tit"><span class="bold atx-font" id="t">T</span><span class="dummy-area"></span><span class="atx-hide-text">echenolgy</span></p>
                   <p class="default-txt">기술</p>
                   <div class="hidden-txt">
                     <span class="bold">특수비철 금속 가공</span>과 <span class="bold">응용기술의 경험</span>을<br />
@@ -450,7 +450,7 @@
                   </div>
                 </div>
                 <div class="atx-box expert">
-                  <p class="box-tit">e<span class="dummy-area"></span><span class="bold atx-font">X</span><span class="dummy-area"></span>pert</p>
+                  <p class="box-tit"><span class="atx-hide-text">e</span><span class="bold atx-font" id="x">X</span><span class="dummy-area"></span><span class="atx-hide-text">pert</span></p>
                   <p class="default-txt">전문가</p>
                   <div class="hidden-txt">
                     30년 이상의 티타늄 및 비철금속<br />
@@ -544,7 +544,7 @@
         //options here
         autoScrolling: true,
         navigation: true,
-        navigationPosition: "right",
+        navigationPosition: "left",
         sectionSelector: ".section",
         anchors: ["page01", "page02", "page03", "page04"],
         afterLoad: function () {
@@ -554,29 +554,15 @@
       });
       let num = true;
       function getHash(myHash) {
-        if (myHash == "#page01") {
-          $(".after-show-sec").fadeOut(0);
-        }
-        if (myHash == "#page021") {
-          if (num == true) {
-            $(".after-show-sec").fadeOut(0);
-            $(".before-show-sec .show-text-wrap div:first-child").css({ "animation-name": "box-ani1" });
-            $(".before-show-sec .show-text-wrap div:nth-child(2)").css({ "animation-name": "box-ani2" });
-            $(".before-show-sec .show-text-wrap div:last-child").css({ "animation-name": "box-ani3" });
-
-            $(".before-show-sec")
-              .delay(3000)
-              .fadeOut(0, function () {
-                $(".after-show-sec").fadeIn(300);
-              });
-            num = false;
-          } else {
-            $(".after-show-sec").fadeIn(0);
-          }
+        if (myHash == "#page02") {
+          $(".box-tit > #a").css({ "font-size": "62px", top: "0%" });
+          $(".box-tit > #t").css({ "font-size": "62px", top: "0%" });
+          $(".box-tit > #x").css({ "font-size": "62px", top: "15%" });
+          $(".show-title, .default-txt, .atx-hide-text, .atx-box ").addClass("show");
         }
         if (myHash == "#page03") {
           $(".footer-top-btn").fadeOut();
-          $(".sec03-bg-wrap .sec03-tit").addClass("on");
+          $(".sec03-bg-wrap .sec03-tit").delay(300).addClass("on");
         }
         if (myHash == "#page04") {
           $(".footer-top-btn").fadeIn();

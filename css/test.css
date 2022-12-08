@@ -1044,4 +1044,45 @@ catalog nav
 }
 .dummy-area {
   width: 62px;
+  display: inline-block;
+}
+.box-tit {
+  position: relative;
+}
+.box-tit > #a {
+  left: -2%;
+  top: -250%;
+  font-size: 298px;
+  transition: all 2.7s ease-in;
+}
+.box-tit > #t {
+  left: 5%;
+  top: -250%;
+  font-size: 298px;
+  transition: all 2.7s ease-in;
+}
+.box-tit > #x {
+  top: -250%;
+  font-size: 298px;
+  transition: all 2.7s ease-in;
+}
+.show-title,
+.default-txt,
+.atx-hide-text {
+  opacity: 0;
+}
+#atx-section02 .color-wrap .after-show-sec .show-box-wrap .atx-box {
+  border: none;
+  transition: border 0.7s ease-in-out;
+  transition-delay: 2.7s;
+}
+.show-title.show,
+.default-txt.show,
+.atx-hide-text.show {
+  opacity: 1;
+  transition: opacity 0.7s ease-in-out;
+  transition-delay: 2.7s;
+}
+#atx-section02 .color-wrap .after-show-sec .show-box-wrap .atx-box.show {
+  border: 1px solid rgba(255, 255, 255, 0.6);
 }
