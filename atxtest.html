@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/swiper.css" />
+    <link rel="stylesheet" href="/css/fullpage.min.css" />
+    <!-- hover css-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+      integrity="sha512-SJw7jzjMYJhsEnN/BuxTWXkezA2cRanuB8TdCNMXFJjxG9ZGSKOX5P3j03H6kdMxalKHZ7vlBMB4CagFP/de0A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/test.css" />
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+
+    <!-- swiper -->
+    <script src="/js/swiper.js"></script>
+    <!-- tweenMax -->
+    <script src="/js/TweenMax.min.js" charset="utf-8"></script>
+    <!-- full page -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+
+    <script src="/js/test.js"></script>
+
+    <title>ATX</title>
+  </head>
+  <body>
+    <div id="atx-header-wrap">
+      <!-- 모바일 헤더 -->
+      <div class="mobileGnbWrap">
+        <ul class="allmenu">
+          <li class="menu-item">
+            <a href="#"><span>회사소개</span></a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href="#"><span>회사소개</span></a>
+              </li>
+              <li class="menu-item">
+                <a href="#"><span>인증정보</span></a>
+              </li>
+              <li class="menu-item">
+                <a href="#"><span>조직도</span></a>
+              </li>
+              <li class="menu-item">
+                <a href="#"><span>연혁</span></a>
+              </li>
+              <li class="menu-item">
+                <a href="#"><span>오시는 길</span></a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href=""><span>소재사업부 </span></a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href=""><span>소재사업부</span></a>
+              </li>
+              <li class="menu-item">
+                <a href=""><span>신소재응용사업부</span></a>
+              </li>
+              <li class="menu-item">
+                <a href=""><span>플랜트사업부</span></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-item">
+            <a href=""><span>실시간재고 </span></a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href="/sub03/sub01.php"><span>코일</span></a>
+              </li>
+              <li>
+                <a href="/sub03/sub01.php?side_menu=2"><span>판재</span></a>
+              </li>
+              <li>
+                <a href="/sub03/sub01.php?side_menu=3"><span>라운드바</span></a>
+              </li>
+              <li>
+                <a href="/sub03/sub01.php?side_menu=4"><span>파이프</span></a>
+              </li>
+              <li>
+                <a href="/sub03/sub01.php?side_menu=5"><span>용접봉</span></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-item">
+            <a href=""><span>블로그 </span></a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href=""><span></span></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-item">
+            <a href=""><span>R&D</span></a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href=""><span>R&D</span></a>
+              </li>
+              <li class="menu-item">
+                <a href=""><span>연구개발</span></a>
+              </li>
+              <li class="menu-item">
+                <a href=""><span>기술개발</span></a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="menu-item">
+            <a href=""><span>고객센터 </span></a>
+            <ul class="sub-menu">
+              <li class="menu-item">
+                <a href=""><span>공지사항</span></a>
+              </li>
+              <li class="menu-item">
+                <a href=""><span>문의하기</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <button type="button" class="btnMobleGnbClose">
+          <span class="skip">메뉴닫기</span>
+        </button>
+      </div>
+      <!-- 모바일 헤더 끝 -->
+
+      <header id="header" class="open">
+        <div class="header-wrap">
+          <div class="header-inner">
+            <h1 id="logo">
+              <a href="/main2.php"></a>
+            </h1>
+            <!-- #logo -->
+            <nav class="menu-container">
+              <ul id="menu" class="menu">
+                <li class="menu-item">
+                  <a href="#"><span>회사소개</span></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href="#"><span>회사소개</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#"><span>인증정보</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#"><span>조직도</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#"><span>연혁</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#"><span>오시는 길</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item">
+                  <a href=""><span>소재사업부</span></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href=""><span>소재사업부</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href=""><span>신소재응용사업부</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href=""><span>플랜트사업부</span></a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-item">
+                  <a href=""><span>실시간재고</span></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href="/sub03/sub01.php"><span>코일</span></a>
+                    </li>
+                    <li>
+                      <a href="/sub03/sub01.php?side_menu=2"><span>판재</span></a>
+                    </li>
+                    <li>
+                      <a href="/sub03/sub01.php?side_menu=3"><span>라운드바</span></a>
+                    </li>
+                    <li>
+                      <a href="/sub03/sub01.php?side_menu=4"><span>파이프</span></a>
+                    </li>
+                    <li>
+                      <a href="/sub03/sub01.php?side_menu=5"><span>용접봉</span></a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-item">
+                  <a href=""><span>블로그</span></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href=""><span></span></a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-item">
+                  <a href=""><span>R&D</span></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href=""><span>R&D</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href=""><span>연구개발</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href=""><span>기술개발</span></a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="menu-item">
+                  <a href=""><span>고객센터 </span></a>
+                  <ul class="sub-menu">
+                    <li class="menu-item">
+                      <a href=""><span>공지사항</span></a>
+                    </li>
+                    <li class="menu-item">
+                      <a href=""><span>문의하기</span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="global-nav">
+                <ul class="nav-item">
+                  <li class="active"><a href="/">KOR</a></li>
+                  <li>
+                    <a href="#">ENG</a>
+                  </li>
+                </ul>
+                <button type="button" class="btnAllmenu">전체메뉴보기</button>
+              </div>
+            </nav>
+            <!-- menu-container -->
+          </div>
+          <!-- header-inner -->
+        </div>
+        <!-- header-wrap -->
+      </header>
+      <nav id="atx-catalog-nav">
+        <a href="http://atx.smilework.kr/e-catalog.php" class="e-catalog-nav">
+          <span>E-Catalog</span>
+        </a>
+      </nav>
+    </div>
+    <!-- // header -->
+    <div id="fullpage">
+      <div id="main">
+        <section id="atx-section01" class="section page01">
+          <div class="visual-wrap">
+            <div class="main-slider">
+              <div class="main-slide swiper-container">
+                <div class="swiper-wrapper">
+                  <style>
+                    #slide01 > .slide-cot > span {
+                      background-color: transparent;
+                      background-size: cover;
+                    }
+                    #slide01 > .slide-cot > span:first-child {
+                      background-image: url("/images/main_slide01.jpg");
+                    }
+                    #slide01 > .slide-cot > span:nth-child(2) {
+                      background-image: url("/images/main_slide01.jpg");
+                      background-position-x: 25%;
+                    }
+                    #slide01 > .slide-cot > span:nth-child(3) {
+                      background-image: url("/images/main_slide01.jpg");
+                      background-position-x: 50%;
+                    }
+                    #slide01 > .slide-cot > span:nth-child(4) {
+                      background-image: url("/images/main_slide01.jpg");
+                      background-position-x: 75%;
+                    }
+                    #slide01 > .slide-cot > span:nth-child(5) {
+                      background-image: url("/images/main_slide01.jpg");
+                      background-position-x: 100%;
+                    }
+                  </style>
+                  <div class="swiper-slide" id="slide01">
+                    <div class="slide-cot">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="slide-img">
+                      <img src="/images/main_slide01.jpg" />
+                    </div>
+                    <div class="text-wrap">
+                      <em>지식제조업의 PARTNER</em>
+                      <span class="main-txt01">티타늄, 특수비철금속</span>
+                      <span class="main-txt02">가공과 응용기술을 갖춘 ATX(주)</span>
+                      <span class="main-txt03">
+                        오랜 경험과 축적된 기술을 바탕으로<br />
+                        지식 제조업의 선두기업이 되기 위해 최선을 다합니다.
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide-cot">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="slide-img">
+                      <img src="/images/main_slide02.jpg" />
+                    </div>
+                    <div class="text-wrap">
+                      <em>고객과 함께 최고의 기술을 열어가는</em>
+                      <span class="main-txt01">30년 가공기술을 갖춘</span>
+                      <span class="main-txt02">티타늄 업계의 선두기업 ATX(주)</span>
+
+                      <span class="main-txt03">
+                        축적된 기술력, 안정된 품질, 원가 경쟁력을 발판으로<br />
+                        고객사로부터 인정받아 국내시장을 뛰어넘어 세계시장으로 나아갈 것 입니다.
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide-cot">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="slide-img">
+                      <img src="/images/main_slide03.jpg" />
+                    </div>
+                    <div class="text-wrap">
+                      <em>고객과 함께 최고의 기술을 열어가는</em>
+                      <span class="main-txt01">30년 가공기술을 갖춘</span>
+                      <span class="main-txt02">티타늄 업계의 선두기업 ATX(주)</span>
+
+                      <span class="main-txt03">
+                        축적된 기술력, 안정된 품질, 원가 경쟁력을 발판으로<br />
+                        고객사로부터 인정받아 국내시장을 뛰어넘어 세계시장으로 나아갈 것 입니다.
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="slide-cot">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="slide-img">
+                      <img src="/images/main_slide04.jpg" />
+                    </div>
+                    <div class="text-wrap">
+                      <em>고객과 함께 최고의 기술을 열어가는</em>
+                      <span class="main-txt01">30년 가공기술을 갖춘</span>
+                      <span class="main-txt02">티타늄 업계의 선두기업 ATX(주)</span>
+
+                      <span class="main-txt03">
+                        축적된 기술력, 안정된 품질, 원가 경쟁력을 발판으로<br />
+                        고객사로부터 인정받아 국내시장을 뛰어넘어 세계시장으로 나아갈 것 입니다.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#page02" class="btn-scroll-down">
+              <div class="mousey">
+                <div class="scroller"></div>
+              </div>
+              <p>scroll down</p>
+            </a>
+          </div>
+        </section>
+        <!-- //상단 비쥬얼 -->
+
+        <script>
+          $(function () {
+            var swiper1 = new Swiper(".main-slide", {
+              slidesPerView: "auto",
+              loop: false,
+              // autoplay: {
+              //   delay: 10000,
+              //   disableOnInteraction: false,
+              // },
+              autoplay: false,
+              effect: "fade",
+            });
+            $(".swiper-slide").each(function () {
+              if ($(this).hasClass("swiper-slide-active")) {
+                console.log();
+                $(this).children(".text-wrap").css({ "animation-name": "scroll" });
+              }
+            });
+          });
+        </script>
+
+        <section id="atx-section02" class="section page02">
+          <div class="color-wrap">
+            <!-- <div class="before-show-sec">
+              <div class="show-text-wrap">
+                <div>A</div>
+                <div>T</div>
+                <div>X</div>
+              </div>
+            </div> -->
+            <div class="after-show-sec">
+              <div class="show-title">
+                <p>
+                  30년 가공 기술을 갖춘<br />
+                  <span class="bold"> 티타늄 업계의 선두 기업 ATX(주)</span>
+                </p>
+              </div>
+              <div class="show-box-wrap">
+                <div class="atx-box advence">
+                  <p class="box-tit"><span class="bold atx-font">A</span>dvence</p>
+                  <p class="default-txt">선진</p>
+                  <div class="hidden-txt">
+                    ATX가 추구하는<br />
+                    선진 융합형 지식 제조업
+                  </div>
+                </div>
+                <div class="atx-box techenolgy">
+                  <p class="box-tit"><span class="bold atx-font">T</span><span class="dummy-area"></span>echenolgy</p>
+                  <p class="default-txt">기술</p>
+                  <div class="hidden-txt">
+                    <span class="bold">특수비철 금속 가공</span>과 <span class="bold">응용기술의 경험</span>을<br />
+                    바탕으로한 기술 선두기업
+                  </div>
+                </div>
+                <div class="atx-box expert">
+                  <p class="box-tit">e<span class="dummy-area"></span><span class="bold atx-font">X</span><span class="dummy-area"></span>pert</p>
+                  <p class="default-txt">전문가</p>
+                  <div class="hidden-txt">
+                    30년 이상의 티타늄 및 비철금속<br />
+                    가공/응용/협업 전문가
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- rnd -->
+        <section id="atx-section03" class="section page03">
+          <div class="sec03-bg-wrap">
+            <div class="sec03-tit">
+              <p>고객과 함께 <span>최고의 기술을 열어갑니다.</span></p>
+              <span>
+                <img src="/images/logo.png" />
+                ATX 는 다년간의 노하우와 기술력으로 <br />
+                다양한 제품 개발이 필요한 귀사의 고민을 해결해드리겠습니다.
+              </span>
+            </div>
+            <div class="sec03-box-wrap">
+              <div class="sec03-box hvr-sweep-to-top">
+                <img src="/images/sec03_icon01.svg" />
+                <p>R&D<img src="/images/arrow_icons.png" class="box-arr" /></p>
+              </div>
+              <div class="sec03-box hvr-sweep-to-top">
+                <img src="/images/sec03_icon02.svg" />
+                <p>연구개발<img src="/images/arrow_icons.png" class="box-arr" /></p>
+              </div>
+              <div class="sec03-box hvr-sweep-to-top">
+                <img src="/images/sec03_icon03.svg" />
+                <p>기술개발<img src="/images/arrow_icons.png" class="box-arr" /></p>
+              </div>
+              <div class="sec03-box hvr-sweep-to-top">
+                <img src="/images/sec03_icon04.svg" />
+                <p>인증정보<img src="/images/arrow_icons.png" class="box-arr" /></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- footer-->
+        <style>
+          /* footer hight auto option */
+          #atx-footer-wrap,
+          #atx-footer-wrap > .fp-tableCell {
+            height: auto !important;
+          }
+          #fp-nav ul li a span,
+          .fp-slidesNav ul li a span {
+            background-color: #fff;
+          }
+        </style>
+        <section id="atx-footer-wrap" class="section page04 fp-auto-height" style="height: auto">
+          <footer id="footer" class="footer">
+            <div class="footer-wrap">
+              <div class="footer-left">
+                <img src="/images/atx_logo_foot.png" />
+                <div class="address">
+                  에이티엑스(주) | 사업자등록번호 : 131-86-09143<br />
+                  경기도 안산시 단원구 번영로 44번길 2(성곡동, 시화공단 4바 311)<br />
+                  TEL. 070-4652-5000 | FAX. 070-4652-5555
+                </div>
+                <div class="copyright">Copyright ⓒ ATX. All Rights Reserved.</div>
+              </div>
+              <div class="footer-right">
+                <div class="tel-wrap">
+                  <img src="/images/foot_call_icon.svg" />
+                  <span>070-4652-5000</span>
+                </div>
+                <div class="e-catalog">
+                  <span>E - Catalog</span>
+                  <img src="/images/arrow_icons.png" />
+                </div>
+              </div>
+            </div>
+            <div class="footer-top-btn">
+              <a href="#page01">
+                <img src="/images/top_arr.svg" />
+                <span>TOP</span>
+              </a>
+            </div>
+          </footer>
+        </section>
+      </div>
+    </div>
+    <script>
+      //배너랑 충돌 나서 일단 풀페이지 막음
+      $("#fullpage").fullpage({
+        //options here
+        autoScrolling: true,
+        navigation: true,
+        navigationPosition: "right",
+        sectionSelector: ".section",
+        anchors: ["page01", "page02", "page03", "page04"],
+        afterLoad: function () {
+          let myHash = window.location.hash;
+          getHash(myHash);
+        },
+      });
+      let num = true;
+      function getHash(myHash) {
+        if (myHash == "#page01") {
+          $(".after-show-sec").fadeOut(0);
+        }
+        if (myHash == "#page021") {
+          if (num == true) {
+            $(".after-show-sec").fadeOut(0);
+            $(".before-show-sec .show-text-wrap div:first-child").css({ "animation-name": "box-ani1" });
+            $(".before-show-sec .show-text-wrap div:nth-child(2)").css({ "animation-name": "box-ani2" });
+            $(".before-show-sec .show-text-wrap div:last-child").css({ "animation-name": "box-ani3" });
+
+            $(".before-show-sec")
+              .delay(3000)
+              .fadeOut(0, function () {
+                $(".after-show-sec").fadeIn(300);
+              });
+            num = false;
+          } else {
+            $(".after-show-sec").fadeIn(0);
+          }
+        }
+        if (myHash == "#page03") {
+          $(".footer-top-btn").fadeOut();
+          $(".sec03-bg-wrap .sec03-tit").addClass("on");
+        }
+        if (myHash == "#page04") {
+          $(".footer-top-btn").fadeIn();
+        }
+      }
+    </script>
+  </body>
+</html>
