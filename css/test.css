@@ -1038,32 +1038,33 @@ catalog nav
   color: #ffffff;
   writing-mode: vertical-lr;
 }
+
+/* add css */
 .atx-font {
   font-family: "MAGNETOB";
   position: absolute;
 }
-.dummy-area {
-  width: 62px;
-  display: inline-block;
-}
-.box-tit {
+
+.atx-box {
   position: relative;
 }
-.box-tit > #a {
-  left: -2%;
-  top: -250%;
+#a {
+  left: 26%;
+  top: -41%;
   font-size: 298px;
   transition: all 2.7s ease-in;
 }
-.box-tit > #t {
-  left: 5%;
-  top: -250%;
+#t {
   font-size: 298px;
+  top: -41%;
+  left: 50%;
+  transform: translateX(-50%);
   transition: all 2.7s ease-in;
 }
-.box-tit > #x {
-  top: -250%;
+#x {
+  top: -41%;
   font-size: 298px;
+  left: -20%;
   transition: all 2.7s ease-in;
 }
 .show-title,
@@ -1085,4 +1086,9 @@ catalog nav
 }
 #atx-section02 .color-wrap .after-show-sec .show-box-wrap .atx-box.show {
   border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.dummy-box.bold.atx-font {
+  font-size: 62px;
+  visibility: hidden;
+  position: unset;
 }
